@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width initial-scale=1">
+	<title>Younghun Lee's web portfolio</title>
+	<link rel="icon" type="image/png" href="img/initial_favicon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-custom" id="background-exp">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+     			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+      		</button>
+      		<a class="navbar-brand" href="index.html"><img src="img/mainlogo.png" alt="initial logo" class="initial-logo"/></a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="myNavbar">
+      		<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+        		<li><a href="projects.html">Projects</a></li>
+        		<li class="active"><a href="experiences.html">Experiences</a></li>
+        		<li><a href="contact.html">Contact</a></li>
+      		</ul>
+    		</div>
+				<div class="navbar-text" id="header_detail">
+					<h1>Experiences</h1>
+					<h2>- Work Experiences, Other Experiences</h2>
+				</div>
+  		</div>
+		</nav>
+	</header>
+	<div class="content">
+		<div class="page-heading">
+		<h3>Work Experiences</h3></div>
+		<div class="detail_with_image">
+			<a href="http://iris.isr.umich.edu" target="_blank"><img src="img/iris_logo_resize.png" alt="IRIS logo" class="thumb"/></a>
+			<h1>Research Assistant</h1>
+			<h1>IRIS</h1>
+			<h2>From Nov 2015 until now | Ann Arbor, Michigan</h2>
+		</div>
+		<div class="exp-section">
+			<p>Now I am working at the Institute for Research on Innovation and Science(IRIS) as a research assistant.
+				My responsibility is to process data - analyzing and visualizing - gathered from various organizations.</p>
+		</div>
+		<div class="detail_with_image">
+			<a href="http://www.samsung.com/sec" target="_blank"><img src="img/sec_logo_resize.png" alt="Samsung Electronics logo" class="thumb"/></a>
+			<h1>Software Engineer</h1>
+			<h1>Samsung Electronics</h1>
+			<h2>From Jan 2015 to Jul 2015 | Suwon, Korea</h2>
+		</div>
+		<div class="exp-section">
+			<p>I worked in the UX Lab of Digital Media and Communication R&amp;D Center as a software programmer
+					and UX evaluator. My responsibilities were to propose new services, build differentiation strategies
+					and made fast prototypes to evaluate usability and originality.</p>
+		</div>
+		<div class="detail_with_image">
+			<a href="http://www.lgcns.com" target="_blank"><img src="img/lgcns_logo_resize.png" alt="LG CNS logo" class="thumb"/></a>
+			<h1>Intern</h1>
+			<h1>LG CNS</h1>
+			<h2>From Jan 2013 to Feb 2013 | Seoul, Korea</h2>
+		</div>
+		<div class="exp-section">
+			<p>I worked in the Smart Transportation Card team of R&amp;D department as a server engineer.
+					I made an auto- matic restoration solution for the Linux server which contains entire codes
+					and programs of our team.</p>
+		</div>
+
+		<div class="page-heading">
+		<h3>Ohter Experiences</h3></div>
+		<div class="detail_with_image">
+			<a href="http://weeklytent.herokuapp.com" target="_blank"><img src="img/weekly_logo.png" alt="Weekly Tent logo" class="thumb"/></a>
+			<h1>Front-end Developer</h1>
+			<h1>Weekly Tent</h1>
+			<h2>From Dec 2013 to Sep 2014 | Seoul, Korea</h2>
+		</div>
+		<div class="exp-section">
+			<p>I created and joined a team named ‘Weekly Tent’ which has a purpose to conduct several projects
+				related to data visualization.</p>
+		</div>
+		<div class="detail_with_image">
+			<a href="http://igsr.snu.ac.kr" target="_blank"><img src="img/igsr_logo.png" alt="IGSR logo" class="thumb"/></a>
+			<h1>Volunteer Worker</h1>
+			<h1>SNU IGSR</h1>
+			<h2>Apr 2014 | Jin-do island, Korea</h2>
+		</div>
+		<div class="exp-section">
+			<p>As a volunteer worker recruited by Seoul National University Institute of Global Social Responsibility(IGSR),
+				I volunteered to help people in Jin-do Island after ‘Ferry Sewol Disaster’. I supplied foods and necessities
+				to bereaved families and cleaned their refugees.</p>
+		</div>
+		<div class="detail_with_image">
+			<a href="http://aiesec.org" target="_blank"><img src="img/aiesec_logo.png" alt="AIESEC logo" class="thumb"/></a>
+			<h1>President</h1>
+			<h1>AIESEC</h1>
+			<h2>From Sep 2009 to Aug 2010 | Seoul, Korea</h2>
+		</div>
+		<div class="exp-section">
+			<p>I joined in the club named AIESEC which is the biggest international student association in the world.
+				I did a lot of activities including leading several projects, participating international conference in
+				the club. After that, I held the position of President of AIESEC in Seoul National University’s local
+				committee.</p>
+		</div>
+
+
+	</div>
+	<footer id="footer">
+		<div class="footer-content">
+		<div class="footer-text">&copy; 2015 Younghun Lee</div>
+	</div>
+	</footer>
+</body>
+<script>
+var total_height = $(window).height()
+var document_height = $('header').height() + $('.content').height()
+if (total_height>=document_height){
+	var footer_elem = document.getElementById('footer');
+	footer_elem.style.position = "fixed";
+}
+
+var elem = document.getElementById('header_detail');
+	$('.navbar-toggle').click(function(){
+		var clicks = $(this).data('clicks');
+		if(clicks){
+			elem.style.display = "block";
+		}
+		else{
+			elem.style.display = "none";
+		}
+		$(this).data("clicks", !clicks);
+	});
+
+
+</script>
+</html>
